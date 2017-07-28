@@ -5,6 +5,8 @@
 # Only deply on master branch
 SOURCE_BRANCH="master"
 
+echo "xxxxxxxxxxxxxx"
+
 echo "Node version: $TRAVIS_NODE_VERSION"
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify

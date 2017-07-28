@@ -10,3 +10,9 @@ script:
 after_script:
   - npminstall codecov && codecov
   - travis_wait ./doc_travis.sh
+
+jobs:
+  include:
+    - stage: deploy
+      node_js: '8'
+      script: ./after.sh
